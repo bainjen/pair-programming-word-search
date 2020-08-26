@@ -36,3 +36,37 @@ describe("#wordSearch()", function() {
     assert.isTrue(result);
   });
 });
+
+it("should return true if the word 'JENNIFER' is present", function() {
+  const result = wordSearch([
+    ['J', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+    ['E', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+    ['N', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
+    ['N', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
+    ['I', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+    ['F', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+    ['E', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+    ['R', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+    ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+  ], 'JENNIFER');
+
+  assert.isTrue(result);
+});
+
+it("should return true if the word 'SYRYM' is present", function() {
+  const result = wordSearch([
+    ['J', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+    ['E', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+    ['S', 'Y', 'R', 'Y', 'M', 'U', 'A', 'L'],
+    ['N', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
+    ['I', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+    ['F', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+    ['E', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+    ['R', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+    ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+  ], 'SYRYM');
+
+  assert.isTrue(result);
+});
+
+});
